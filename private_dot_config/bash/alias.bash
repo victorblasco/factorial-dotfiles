@@ -10,8 +10,7 @@ then
 fi
 
 # Jumps
-alias jb='cd /workspace/backend/'
-alias jf='cd /workspace/frontend/'
+alias jf='cd /workspace/factorial/'
 alias jc='cd ~/.local/share/chezmoi/'
 
 # Devenv
