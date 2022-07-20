@@ -53,10 +53,15 @@ vim.keymap.set("n", "<Leader>f", ":NvimTreeFindFile<CR>", { silent = true })
 -- No Highlights
 vim.keymap.set("n", "<Leader>h", ":let @/=''<CR>", { silent = true })
 
+-- Fast fuzzy find
+vim.keymap.set("n", "<Leader><Leader>", "<cmd>FzfLua git_files<cr>", { silent = true })
+
 local mappings = {
 	n = "NerdTree",
 	f = "Find File",
 	h = "No Highlight",
+
+	["<space>"] = "Fuzzy search",
 
 	g = {
 		name = "Git",
@@ -71,6 +76,7 @@ local mappings = {
 		d = { "<cmd>TroubleToggle lsp_definitions<cr>", "Definitions" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
 		r = { "<cmd>LspRename<cr>", "Rename" },
+		f = { "<cmd>:lua vim.lsp.buf.code_action()<cr>", "Fix" },
 	},
 
 	s = {
