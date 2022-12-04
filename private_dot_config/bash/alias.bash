@@ -9,6 +9,9 @@ then
   alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 fi
 
+# Alias
+alias r='source ~/.bashrc'
+
 # Jumps
 alias jf='cd /workspace/factorial/'
 alias jc='cd ~/.local/share/chezmoi/'
