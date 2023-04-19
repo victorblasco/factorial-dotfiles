@@ -11,6 +11,7 @@ fi
 
 # Alias
 alias r='source ~/.bashrc'
+alias lintf='pnpm run lint:fastfix'
 
 # Jumps
 alias jf='cd /workspace/factorial/'
